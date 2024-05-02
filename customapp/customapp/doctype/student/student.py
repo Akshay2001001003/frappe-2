@@ -38,29 +38,12 @@ def create_user_if_not_exists(email):
         frappe.msgprint("User already exists.")
 
 class Student(Document):
-    last_sno = 0
     
     def get_full_name(self):
         full_name_parts = [self.first_name, self.middle_name, self.last_name]
         full_name = " ".join(part for part in full_name_parts if part)
         return full_name
     
-    def autoname(self):
-        current_date = datetime.datetime.now()
-        year = current_date.year
-        month = current_date.month
-        day = current_date.day
-
-        # Increment the serial number
-        Student.last_sno += 1
-
-        # Format the serial number with leading zeros
-        sno = str(Student.last_sno).zfill(4)
-
-        # Format the name
-        self.name = f'STU-{year}-{month:02d}-{day:02d}-{sno}'
-        return self.name
-
     def validate(self):
         if not hasattr(self, 'date_of_birth') or not self.date_of_birth:
             frappe.throw("Date of birth is required.")
@@ -74,3 +57,7 @@ class Student(Document):
 
     def before_save(self):
         self.full_name = self.get_full_name()
+        
+    def before_insert(self):
+        # Set the joining date to the current date by default
+        self.joining_date = datetime.datetime.now().date()

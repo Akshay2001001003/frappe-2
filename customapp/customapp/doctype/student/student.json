@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:STU{joining_date}-{####}",
  "creation": "2024-05-01 12:48:42.609243",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -88,10 +89,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-02 09:57:58.583788",
+ "modified": "2024-05-02 15:38:32.986338",
  "modified_by": "Administrator",
  "module": "Customapp",
  "name": "Student",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
