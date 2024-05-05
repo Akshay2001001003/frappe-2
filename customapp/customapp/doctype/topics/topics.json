@@ -1,0 +1,35 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-02 16:22:23.350536",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "topic_name",
+  "topic_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "topic_name",
+   "fieldtype": "Data",
+   "label": "Topic Name"
+  },
+  {
+   "fieldname": "topic_description",
+   "fieldtype": "Data",
+   "label": "Topic Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-03 17:59:02.561900",
+ "modified_by": "Administrator",
+ "module": "Customapp",
+ "name": "Topics",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

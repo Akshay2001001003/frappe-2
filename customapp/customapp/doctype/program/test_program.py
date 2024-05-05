@@ -1,0 +1,10 @@
+# Copyright (c) 2024, me and Contributors
+# See license.txt
+
+import frappe
+from frappe.tests.utils import FrappeTestCase
+
+import frappe
+class TestProgram(FrappeTestCase):
+	pass
+

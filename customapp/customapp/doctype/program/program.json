@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-05-02 15:57:04.150701",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "program_name",
+  "discription",
+  "start_date",
+  "end_date",
+  "duration",
+  "total_credits",
+  "status",
+  "instructor",
+  "participant",
+  "courses"
+ ],
+ "fields": [
+  {
+   "fieldname": "program_name",
+   "fieldtype": "Data",
+   "label": "Program Name"
+  },
+  {
+   "fieldname": "discription",
+   "fieldtype": "Text",
+   "label": "Discription"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Float",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "total_credits",
+   "fieldtype": "Float",
+   "label": "total credits"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "Planned\nOngoing\nCompleted"
+  },
+  {
+   "fieldname": "instructor",
+   "fieldtype": "Link",
+   "label": "Instructor",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "participant",
+   "fieldtype": "Table",
+   "label": "participant",
+   "options": "Participants"
+  },
+  {
+   "fieldname": "courses",
+   "fieldtype": "Table",
+   "label": "courses",
+   "options": "Courses"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-04 19:08:51.233913",
+ "modified_by": "Administrator",
+ "module": "Customapp",
+ "name": "Program",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

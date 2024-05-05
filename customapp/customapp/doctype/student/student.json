@@ -17,7 +17,8 @@
   "nationality",
   "blood_group",
   "joining_date",
-  "active"
+  "active",
+  "img"
  ],
  "fields": [
   {
@@ -85,11 +86,16 @@
    "fieldname": "form_section",
    "fieldtype": "Section Break",
    "label": "Form"
+  },
+  {
+   "fieldname": "img",
+   "fieldtype": "Attach",
+   "label": "img"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-05-02 15:38:32.986338",
+ "modified": "2024-05-04 16:47:08.024755",
  "modified_by": "Administrator",
  "module": "Customapp",
  "name": "Student",
